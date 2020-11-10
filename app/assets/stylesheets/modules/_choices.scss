@@ -20,7 +20,7 @@
     .menu {
       list-style: none;
   
-      &__list {
+      &__lists {
         font-size: 60px;
         font-family: 'DancingScript', cursive;
         font-weight: bold;
@@ -33,19 +33,19 @@
         margin-top: 32px;
         margin-left: 23px;
 
-        .Q1 {
+        .menu__list {
           text-decoration: none;
           color: brown;
         }
 
-        .Q2 {
-          text-decoration: none;
-          color: brown;
-        }
+        // .active {
+        //   background: #353d3e;
+        //   color: #fff;
+        // }
 
-        .title {
-          text-decoration: none;
-          color: brown;
+        .red {
+          color: crimson;
+          font-weight: bold;
         }
       }
     }
@@ -61,21 +61,59 @@
     left: 25%;
     position: relative;
     
-    .categoryA {
+    .contents {
       position: absolute;
       top: 17%;
       left: 8%;
-      &__1 {
-        font-size: 24px;
-        font-family: 'Kosugi Maru', cursive;
-        font-weight: bold;
+    }
+
+    .content {
+      font-size: 24px;
+      font-family: 'Kosugi Maru', cursive;
+      font-weight: bold;
+      display: none;
+    }
+
+    .show {
+      display: block;
+    }
+
+    .back_btn {
+      text-decoration: none;
+      color: black;
+    }
+
+    .red {
+      color: crimson;
+      font-weight: bold;
+    }
+
+    .pictures {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 70px;
+      
+      .pic1 {
+        background-image: url(ojigi_man.png);
+        height: 40vh;
+        width: 15vw;
+        background-size:15vw 40vh;
       }
-      &__2 {
-        font-size: 24px;
-        font-family: 'Kosugi Maru', cursive;
-        font-weight: bold;
+
+      .pic2 {
+        background-image: url(message_arigatou.png);
+        height: 30vh;
+        width: 15vw;
+        background-size:15vw 30vh;
+      }
+  
+      .pic3 {
+        background-image: url(ojigi_woman.png);
+        height: 40vh;
+        width: 15vw;
+        background-size:15vw 40vh;
       }
     }
-    
   }
 }

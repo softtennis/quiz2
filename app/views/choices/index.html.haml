@@ -2,21 +2,27 @@
   .bg_image
     .container
       %ul.menu
-        %li.menu__list 
-          = link_to "#", class:"Q1", id:"Q1" do
+        %li.menu__lists
+          = link_to "#", class:"menu__list active", id:"Q1" do
             Q 1
-        %li.menu__list
-          = link_to "#", class:"Q2", id:"Q2" do
+        %li.menu__lists
+          = link_to "#", class:"menu__list", id:"Q2" do
             Q 2
-        %li.menu__list
-          = link_to "#", class:"title",id:"title" do
+        %li.menu__lists
+          = link_to "#", class:"menu__list",id:"title" do
             TITLE
     .box
-      .categoryA
-        .categoryA__1
-          切り取り、コピー、貼り付け、その他の
-        %br
-        .categoryA__2
-          一般的なショートカット(全21問)
+      %ul.contents
+        %li.content.show
+          切り取り、コピー、貼り付け、その他の一般的なショートカット(全21問)
+        %li.content
+          Finderとシステムに関するショートカット(全29問)
+        %li.content
+          = link_to root_path, class:"back_btn",id:"back" do
+            TITLEに戻る
+          .pictures
+            .pic1
+            .pic2
+            .pic3
 
     
