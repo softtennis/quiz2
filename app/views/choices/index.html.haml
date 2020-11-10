@@ -1,0 +1,28 @@
+.top
+  .bg_image
+    .container
+      %ul.menu
+        %li.menu__lists
+          = link_to "#", class:"menu__list active", id:"Q1" do
+            Q 1
+        %li.menu__lists
+          = link_to "#", class:"menu__list", id:"Q2" do
+            Q 2
+        %li.menu__lists
+          = link_to "#", class:"menu__list",id:"title" do
+            TITLE
+    .box
+      %ul.contents
+        %li.content.show
+          切り取り、コピー、貼り付け、その他の一般的なショートカット(全21問)
+        %li.content
+          Finderとシステムに関するショートカット(全29問)
+        %li.content
+          = link_to root_path, class:"back_btn",id:"back" do
+            TITLEに戻る
+          .pictures
+            .pic1
+            .pic2
+            .pic3
+
+    

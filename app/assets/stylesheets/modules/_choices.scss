@@ -1,0 +1,119 @@
+* {
+  box-sizing: border-box;
+}
+
+.top {
+  // height: 100vh;
+
+  .bg_image {
+    background-image: url(669047_m.jpg);
+    height: 100vh;
+    width: 100vw;
+    background-size:100vw 100vh;
+  }
+  
+  .container {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+
+    .menu {
+      list-style: none;
+  
+      &__lists {
+        font-size: 60px;
+        font-family: 'DancingScript', cursive;
+        font-weight: bold;
+        background-image: url(303781_s.jpg);
+        height: 18vh;
+        width: 20vw;
+        background-size:20vw 18vh;
+        text-align: center;
+        padding-top: 25px;
+        margin-top: 32px;
+        margin-left: 23px;
+
+        .menu__list {
+          text-decoration: none;
+          color: brown;
+        }
+
+        // .active {
+        //   background: #353d3e;
+        //   color: #fff;
+        // }
+
+        .red {
+          color: crimson;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+
+  .box {
+    background-image: url(480595_m.jpg);
+    height: 84vh;
+    width: 70vw;
+    background-size:70vw 84vh;
+    position: absolute;
+    top: 8%;
+    left: 25%;
+    position: relative;
+    
+    .contents {
+      position: absolute;
+      top: 17%;
+      left: 8%;
+    }
+
+    .content {
+      font-size: 24px;
+      font-family: 'Kosugi Maru', cursive;
+      font-weight: bold;
+      display: none;
+    }
+
+    .show {
+      display: block;
+    }
+
+    .back_btn {
+      text-decoration: none;
+      color: black;
+    }
+
+    .red {
+      color: crimson;
+      font-weight: bold;
+    }
+
+    .pictures {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 70px;
+      
+      .pic1 {
+        background-image: url(ojigi_man.png);
+        height: 40vh;
+        width: 15vw;
+        background-size:15vw 40vh;
+      }
+
+      .pic2 {
+        background-image: url(message_arigatou.png);
+        height: 30vh;
+        width: 15vw;
+        background-size:15vw 30vh;
+      }
+  
+      .pic3 {
+        background-image: url(ojigi_woman.png);
+        height: 40vh;
+        width: 15vw;
+        background-size:15vw 40vh;
+      }
+    }
+  }
+}
