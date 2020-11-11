@@ -34,9 +34,7 @@
 
   .choice1:hover {
     transform: translate3d(0, 5px, 0);
-    color: #007db9;;
     filter: none;
-    background: #fff;
     border-radius: 20px 20px 20px 20px;
   }
 
@@ -55,9 +53,7 @@
 
   .choice2:hover {
     transform: translate3d(0, 5px, 0);
-    color: #007db9;;
     filter: none;
-    background: #fff;
     border-radius: 20px 20px 20px 20px;
   }
 
@@ -76,9 +72,7 @@
 
   .choice3:hover {
     transform: translate3d(0, 5px, 0);
-    color: #007db9;;
     filter: none;
-    background: #fff;
     border-radius: 20px 20px 20px 20px;
   }
 
@@ -97,9 +91,7 @@
 
   .choice4:hover {
     transform: translate3d(0, 5px, 0);
-    color: #007db9;;
     filter: none;
-    background: #fff;
     border-radius: 20px 20px 20px 20px;
   }
 
@@ -111,7 +103,7 @@
   }
 
   .red {
-    color: crimson;
+    color: deeppink;
     font-weight: bold;
   }
 
@@ -123,7 +115,6 @@
   .bottom-content {
     height: 10vh;
     width: 100vw;
-    // background-color:wheat;
     position: relative;
   
     .nextbutton {
@@ -150,7 +141,6 @@
   
     .top-page-btn {
       text-decoration-line: none;
-      // font-family: Georgia, 'Times New Roman', Times, serif;
       font-size: 30px;
       color: black;
       position: absolute;
