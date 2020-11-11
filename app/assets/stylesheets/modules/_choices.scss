@@ -72,10 +72,53 @@
       font-family: 'Kosugi Maru', cursive;
       font-weight: bold;
       display: none;
+
+      .exercise-setA {
+        display: flex;
+
+        .exerciseA {
+          padding: 30px;
+
+          .exercise1{
+            display: grid;
+            grid-template-columns: 150px 150px;
+            grid-auto-flow: column;
+            grid-template-rows: repeat(10,35px);
+          }
+        }
+      }
+
+      .exercise-setB {
+        display: flex;
+
+        .exerciseB {
+          padding: 30px;
+
+          .exercise2{
+            display: grid;
+            grid-template-columns: 150px 150px;
+            grid-auto-flow: column;
+            grid-template-rows: repeat(10,35px);
+          }
+        }
+      }
+
+      .ex {
+        font-size: 25px;
+        color: black;
+        text-decoration-line: none;
+      }
+
+      .red {
+        color: crimson;
+        font-weight: bold;
+      }
     }
 
     .show {
       display: block;
+      padding-top: 30px;
+      padding-left: 10px;
     }
 
     .back_btn {
@@ -86,6 +129,22 @@
     .red {
       color: crimson;
       font-weight: bold;
+    }
+
+    .misawa {
+      background-image: url(15731053255966u.png);
+      height: 40vh;
+      width: 15vw;
+      background-size:15vw 40vh;
+      margin: 30px;
+    }
+
+    .usagi {
+      background-image: url(animal_chara_computer_usagi.png);
+      height: 40vh;
+      width: 15vw;
+      background-size:15vw 40vh;
+      margin: 30px;
     }
 
     .pictures {
