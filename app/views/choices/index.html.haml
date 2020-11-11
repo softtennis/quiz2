@@ -15,8 +15,22 @@
       %ul.contents
         %li.content.show
           切り取り、コピー、貼り付け、その他の一般的なショートカット(全21問)
+          .exercise-setA
+            .exerciseA
+              .exercise1
+                - @questions1.each_with_index do |question, i| 
+                  = link_to choice_questions_path(question), class: "ex", id: "ex" do
+                    第#{ i + 1 }問
+            .usagi
         %li.content
           Finderとシステムに関するショートカット(全29問)
+          .exercise-setB
+            .exerciseB
+              .exercise2
+                - @questions2.each_with_index do |question, i| 
+                  = link_to choice_questions_path(question), class: "ex", id:"ex" do
+                    第#{ i + 1 }問
+            .misawa
         %li.content
           = link_to root_path, class:"back_btn",id:"back" do
             TITLEに戻る

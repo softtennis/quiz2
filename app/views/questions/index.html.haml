@@ -1,0 +1,47 @@
+.top_content
+  .Nproblem
+    = @question.content
+  - if @answer == 1
+    .choice1.answer
+      .frame
+        = @choice1.text
+  - else
+    .choice1.miss
+      .frame
+        = @choice1.text
+  - if @answer == 2
+    .choice2.answer
+      .frame
+        = @choice2.text
+  - else
+    .choice2.miss
+      .frame
+        = @choice2.text
+  - if @answer == 3
+    .choice3.answer
+      .frame
+        = @choice3.text
+  - else
+    .choice3.miss
+      .frame
+        = @choice3.text
+  - if @answer == 4
+    .choice4.answer
+      .frame
+        = @choice4.text
+  - else
+    .choice4.miss
+      .frame
+        = @choice4.text
+  .bottom-content
+    - if @question.id == 21
+      = link_to choices_path, class: "nextbutton" do
+        戻る
+    - elsif @question.id == 50
+      = link_to choices_path, class: "nextbutton" do
+        戻る
+    - else
+      = link_to choice_questions_path(@question.id + 1), class: "nextbutton" do
+        次へ進む
+    = link_to choices_path, class: "top-page-btn" do
+      選択画面に戻る

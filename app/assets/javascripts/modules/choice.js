@@ -29,6 +29,27 @@ window.addEventListener("load", function(){
       back.classList.remove("red");
     });
 
+    const ex = document.getElementsByClassName("ex");
+    const exs = Array.from(ex)
+
+    exs.forEach(function(test){
+      test.addEventListener("mouseover", function(){
+        test.classList.add("red");
+      })
+
+      test.addEventListener("mouseout", function(){
+        test.classList.remove("red");
+      })
+
+    })
+
+    // ex.addEventListener("mouseover", function(){
+    //   ex.classList.add("red");
+    // });
+    // ex.addEventListener("mouseout", function(){
+    //   ex.classList.remove("red");
+    // });
+
 
     const tabs = document.getElementsByClassName("menu__list");
     tabsAry = Array.prototype.slice.call(tabs);
