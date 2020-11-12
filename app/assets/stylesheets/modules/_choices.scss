@@ -25,6 +25,8 @@
         font-family: 'DancingScript', cursive;
         font-weight: bold;
         background-image: image-url("303781_s.jpg");
+        cursor: pointer;
+        filter: drop-shadow(10px 10px 10px rgba(0,0,0,0.6));
         height: 18vh;
         width: 20vw;
         background-size:20vw 18vh;
@@ -32,6 +34,12 @@
         padding-top: 25px;
         margin-top: 32px;
         margin-left: 23px;
+
+        &__lists:hover {
+          transform: translate3d(0, 5px, 0);
+          filter: none;
+          border-radius: 20px 20px 20px 20px;
+        }
 
         .menu__list {
           text-decoration: none;
