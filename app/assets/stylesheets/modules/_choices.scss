@@ -20,7 +20,7 @@
     .menu {
       list-style: none;
   
-      &__lists {
+      &__list {
         font-size: 60px;
         font-family: 'DancingScript', cursive;
         font-weight: bold;
@@ -34,31 +34,26 @@
         padding-top: 25px;
         margin-top: 32px;
         margin-left: 23px;
-
-        &__lists:hover {
-          transform: translate3d(0, 5px, 0);
-          filter: none;
-          border-radius: 20px 20px 20px 20px;
-        }
-
-        .menu__list {
-          text-decoration: none;
-          color: brown;
-        }
+        text-decoration: none;
+        color: brown;
 
         // .active {
         //   background: #353d3e;
         //   color: #fff;
         // }
+      }
 
-        .red {
-          color: crimson;
-          font-weight: bold;
-        }
+      .menu__list:hover {
+        transform: translate3d(0, 5px, 0);
+        filter: none;
+      }
+
+      .red {
+        color: crimson;
+        font-weight: bold;
       }
     }
   }
-
   .box {
     background-image: image-url("480595_m.jpg");
     height: 84vh;

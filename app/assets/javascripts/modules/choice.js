@@ -3,6 +3,7 @@ window.addEventListener("load", function(){
     const q1 = document.getElementById("Q1");
     q1.addEventListener("mouseover", function(){
       q1.classList.add("red");
+      // q1.style.color = '#fff';
     });
     q1.addEventListener("mouseout", function(){
       q1.classList.remove("red");
