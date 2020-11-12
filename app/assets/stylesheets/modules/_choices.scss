@@ -75,6 +75,7 @@
       font-family: 'Kosugi Maru', cursive;
       font-weight: bold;
       display: none;
+      user-select: none;
 
       .exercise-setA {
         display: flex;
@@ -122,6 +123,7 @@
       display: block;
       padding-top: 30px;
       padding-left: 10px;
+      user-select: none;
     }
 
     .back_btn {

@@ -17,6 +17,7 @@
     background-color: papayawhip;
     width: 72%;
     text-align: center;
+    user-select: none;
   }
 
   .choice1 {
@@ -148,6 +149,11 @@
       position: absolute;
       top: 650px;
       right: 120px;
+    }
+
+    .red {
+      color: crimson;
+      font-weight: bold;
     }
   }
 }

@@ -42,15 +42,7 @@ window.addEventListener("load", function(){
         test.classList.remove("red");
       })
 
-    })
-
-    // ex.addEventListener("mouseover", function(){
-    //   ex.classList.add("red");
-    // });
-    // ex.addEventListener("mouseout", function(){
-    //   ex.classList.remove("red");
-    // });
-
+    });
 
     const tabs = document.getElementsByClassName("menu__list");
     tabsAry = Array.prototype.slice.call(tabs);

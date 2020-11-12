@@ -35,13 +35,13 @@
         = @choice4.text
   .bottom-content
     - if @question.id == 21
-      = link_to choices_path, class: "nextbutton" do
+      = link_to choices_path, class: "nextbutton", id:"next" do
         戻る
     - elsif @question.id == 50
-      = link_to choices_path, class: "nextbutton" do
+      = link_to choices_path, class: "nextbutton", id:"next" do
         戻る
     - else
-      = link_to choice_questions_path(@question.id + 1), class: "nextbutton" do
+      = link_to choice_questions_path(@question.id + 1), class: "nextbutton", id:"next" do
         次へ進む
-    = link_to choices_path, class: "top-page-btn" do
+    = link_to choices_path, class: "top-page-btn", id: "top-page-btn" do
       選択画面に戻る

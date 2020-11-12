@@ -14,5 +14,19 @@ window.addEventListener('load', function() {
         miss[i].classList.add("blue");
       });
     }
+    const top_page = document.getElementById("top-page-btn");
+    top_page.addEventListener("mouseover", function(){
+      top_page.classList.add("red");
+    });
+    top_page.addEventListener("mouseout", function(){
+      top_page.classList.remove("red");
+    });
+    const next = document.getElementById("next");
+    next.addEventListener("mouseover", function(){
+      next.classList.add("red");
+    });
+    next.addEventListener("mouseout", function(){
+      next.classList.remove("red");
+    });
   }
 });
