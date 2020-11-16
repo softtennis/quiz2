@@ -242,115 +242,115 @@ class QuestionsController < ApplicationController
     end
     if @question.id == 35
       @answer = 4
-      @choice1 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:35).first
-      @choice2 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:35).where.not(id:@choice1).first
-      @choice3 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:35).where.not(id:@choice1).where.not(id:@choice2).first
-      @choice4 = Choice.find(35)
+      @choice1 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:21).first
+      @choice2 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:21).where.not(id:@choice1).first
+      @choice3 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:21).where.not(id:@choice1).where.not(id:@choice2).first
+      @choice4 = Choice.find(21)
     end
     if @question.id == 36
       @answer = 1
-      @choice1 = Choice.find(36)
+      @choice1 = Choice.find(35)
       @choice2 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:@choice1).first
       @choice3 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:@choice1).where.not(id:@choice2).first
       @choice4 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:@choice1).where.not(id:@choice2).where.not(id:@choice3).first
     end
     if @question.id == 37
       @answer = 2
-      @choice1 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:37).first
-      @choice2 = Choice.find(37)
+      @choice1 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:36).first
+      @choice2 = Choice.find(36)
       @choice3 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:@choice1).where.not(id:@choice2).first
       @choice4 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:@choice1).where.not(id:@choice2).where.not(id:@choice3).first
     end
     if @question.id == 38
       @answer = 1
-      @choice1 = Choice.find(38)
+      @choice1 = Choice.find(37)
       @choice2 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:@choice1).first
       @choice3 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:@choice1).where.not(id:@choice2).first
       @choice4 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:@choice1).where.not(id:@choice2).where.not(id:@choice3).first
     end
     if @question.id == 39
       @answer = 3
-      @choice1 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:39).first
-      @choice2 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:39).where.not(id:@choice1).first
-      @choice3 = Choice.find(39)
+      @choice1 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:38).first
+      @choice2 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:38).where.not(id:@choice1).first
+      @choice3 = Choice.find(38)
       @choice4 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:@choice1).where.not(id:@choice2).where.not(id:@choice3).first
     end
     if @question.id == 40
       @answer = 4
-      @choice1 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:40).first
-      @choice2 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:40).where.not(id:@choice1).first
-      @choice3 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:40).where.not(id:@choice1).where.not(id:@choice2).first
-      @choice4 = Choice.find(40)
+      @choice1 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:39).first
+      @choice2 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:39).where.not(id:@choice1).first
+      @choice3 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:39).where.not(id:@choice1).where.not(id:@choice2).first
+      @choice4 = Choice.find(39)
     end
     if @question.id == 41
       @answer = 1
-      @choice1 = Choice.find(41)
+      @choice1 = Choice.find(40)
       @choice2 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:@choice1).first
       @choice3 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:@choice1).where.not(id:@choice2).first
       @choice4 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:@choice1).where.not(id:@choice2).where.not(id:@choice3).first
     end
     if @question.id == 42
       @answer = 2
-      @choice1 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:42).first
-      @choice2 = Choice.find(42)
+      @choice1 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:41).first
+      @choice2 = Choice.find(41)
       @choice3 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:@choice1).where.not(id:@choice2).first
       @choice4 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:@choice1).where.not(id:@choice2).where.not(id:@choice3).first
     end
     if @question.id == 43
       @answer = 1
-      @choice1 = Choice.find(43)
+      @choice1 = Choice.find(42)
       @choice2 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:@choice1).first
       @choice3 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:@choice1).where.not(id:@choice2).first
       @choice4 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:@choice1).where.not(id:@choice2).where.not(id:@choice3).first
     end
     if @question.id == 44
       @answer = 3
-      @choice1 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:44).first
-      @choice2 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:44).where.not(id:@choice1).first
-      @choice3 = Choice.find(44)
+      @choice1 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:43).first
+      @choice2 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:43).where.not(id:@choice1).first
+      @choice3 = Choice.find(43)
       @choice4 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:@choice1).where.not(id:@choice2).where.not(id:@choice3).first
     end
     if @question.id == 45
       @answer = 4
-      @choice1 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:45).first
-      @choice2 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:45).where.not(id:@choice1).first
-      @choice3 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:45).where.not(id:@choice1).where.not(id:@choice2).first
-      @choice4 = Choice.find(45)
+      @choice1 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:44).first
+      @choice2 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:44).where.not(id:@choice1).first
+      @choice3 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:44).where.not(id:@choice1).where.not(id:@choice2).first
+      @choice4 = Choice.find(44)
     end
     if @question.id == 46
       @answer = 1
-      @choice1 = Choice.find(46)
+      @choice1 = Choice.find(45)
       @choice2 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:@choice1).first
       @choice3 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:@choice1).where.not(id:@choice2).first
       @choice4 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:@choice1).where.not(id:@choice2).where.not(id:@choice3).first
     end
     if @question.id == 47
       @answer = 2
-      @choice1 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:47).first
-      @choice2 = Choice.find(47)
+      @choice1 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:46).first
+      @choice2 = Choice.find(46)
       @choice3 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:@choice1).where.not(id:@choice2).first
       @choice4 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:@choice1).where.not(id:@choice2).where.not(id:@choice3).first
     end
     if @question.id == 48
       @answer = 1
-      @choice1 = Choice.find(48)
+      @choice1 = Choice.find(47)
       @choice2 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:@choice1).first
       @choice3 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:@choice1).where.not(id:@choice2).first
       @choice4 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:@choice1).where.not(id:@choice2).where.not(id:@choice3).first
     end
     if @question.id == 49
       @answer = 3
-      @choice1 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:49).first
-      @choice2 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:49).where.not(id:@choice1).first
-      @choice3 = Choice.find(49)
+      @choice1 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:48).first
+      @choice2 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:48).where.not(id:@choice1).first
+      @choice3 = Choice.find(48)
       @choice4 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:@choice1).where.not(id:@choice2).where.not(id:@choice3).first
     end
     if @question.id == 50
       @answer = 4
-      @choice1 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:50).first
-      @choice2 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:50).where.not(id:@choice1).first
-      @choice3 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:50).where.not(id:@choice1).where.not(id:@choice2).first
-      @choice4 = Choice.find(50)
+      @choice1 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:49).first
+      @choice2 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:49).where.not(id:@choice1).first
+      @choice3 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:49).where.not(id:@choice1).where.not(id:@choice2).first
+      @choice4 = Choice.find(49)
     end
   end
 end
