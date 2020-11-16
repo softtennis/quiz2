@@ -107,6 +107,21 @@
         }
       }
 
+      .exercise-setC {
+        display: flex;
+
+        .exerciseC {
+          padding: 30px;
+
+          .exercise3{
+            display: grid;
+            grid-template-columns: 100px 100px 100px 100px 100px;
+            grid-auto-flow: column;
+            grid-template-rows: repeat(10,35px);
+          }
+        }
+      }
+
       .ex {
         font-size: 25px;
         color: black;
@@ -136,6 +151,34 @@
       font-weight: bold;
     }
 
+    .balloon1 {
+      position: relative;
+      display: inline-block;
+      margin-top: 30px;
+      padding: 7px 10px;
+      min-width: 120px;
+      max-width: 100%;
+      color: #555;
+      font-size: 16px;
+      background:white;
+      border-radius: 15px;
+    }
+    
+    .balloon1:before {
+      content: "";
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      margin-left: -15px;
+      border: 15px solid transparent;
+      border-top: 15px solid white;
+    }
+    
+    .balloon1 p {
+      margin: 0;
+      padding: 0;
+    }
+
     .misawa {
       background-image: image-url("15731053255966u.png");
       height: 40vh;
@@ -150,6 +193,14 @@
       width: 15vw;
       background-size:15vw 40vh;
       margin: 40px;
+    }
+
+    .akuma {
+      background-image: image-url("succubus.png");
+      height: 40vh;
+      width: 12vw;
+      background-size:12vw 40vh;
+      // margin: 30px;
     }
 
     .pictures {

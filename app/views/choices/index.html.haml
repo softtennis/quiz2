@@ -4,6 +4,7 @@
       %ul.menu
         %li.menu__list.active{id: "Q1"} Q 1
         %li.menu__list{id: "Q2"} Q 2
+        %li.menu__list{id: "Q3"} Q 3
         %li.menu__list{id: "title"} TITLE
     .box
       %ul.contents
@@ -27,6 +28,19 @@
                     = link_to choice_questions_path(question), class: "ex", id:"ex" do
                       第#{ i + 1 }問
             .misawa
+        %li.content
+          書類に関するショートカット(全58問)
+          .exercise-setC
+            .exerciseC
+              .exercise3
+                - @questions3.each_with_index do |question, i|
+                  .waku 
+                    = link_to choice_questions_path(question), class: "ex", id:"ex" do
+                      第#{ i + 1 }問
+            .matome
+              .balloon1
+                難しいわよ?
+              .akuma
         %li.content
           = link_to root_path, class:"back_btn",id:"back" do
             TITLEに戻る

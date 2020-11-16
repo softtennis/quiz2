@@ -40,6 +40,9 @@
     - elsif @question.id == 50
       = link_to choices_path, class: "nextbutton", id:"next" do
         戻る
+    - elsif @question.id == 108
+      = link_to choices_path, class: "nextbutton", id:"next" do
+        戻る
     - else
       = link_to choice_questions_path(@question.id + 1), class: "nextbutton", id:"next" do
         次へ進む
