@@ -352,5 +352,404 @@ class QuestionsController < ApplicationController
       @choice3 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:49).where.not(id:@choice1).where.not(id:@choice2).first
       @choice4 = Choice.find(49)
     end
+    if @question.id == 51
+      @answer = 1
+      @choice1 = Choice.find(50)
+      @choice2 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:@choice1).first
+      @choice3 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:@choice1).where.not(id:@choice2).first
+      @choice4 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:@choice1).where.not(id:@choice2).where.not(id:@choice3).first
+    end
+    if @question.id == 52
+      @answer = 2
+      @choice1 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:51).first
+      @choice2 = Choice.find(51)
+      @choice3 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:@choice1).where.not(id:@choice2).first
+      @choice4 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:@choice1).where.not(id:@choice2).where.not(id:@choice3).first
+    end
+    if @question.id == 53
+      @answer = 1
+      @choice1 = Choice.find(52)
+      @choice2 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:@choice1).first
+      @choice3 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:@choice1).where.not(id:@choice2).first
+      @choice4 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:@choice1).where.not(id:@choice2).where.not(id:@choice3).first
+    end
+    if @question.id == 54
+      @answer = 3
+      @choice1 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:53).first
+      @choice2 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:53).where.not(id:@choice1).first
+      @choice3 = Choice.find(53)
+      @choice4 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:@choice1).where.not(id:@choice2).where.not(id:@choice3).first
+    end
+    if @question.id == 55
+      @answer = 4
+      @choice1 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:54).first
+      @choice2 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:54).where.not(id:@choice1).first
+      @choice3 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:54).where.not(id:@choice1).where.not(id:@choice2).first
+      @choice4 = Choice.find(54)
+    end
+    if @question.id == 56
+      @answer = 1
+      @choice1 = Choice.find(55)
+      @choice2 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:@choice1).first
+      @choice3 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:@choice1).where.not(id:@choice2).first
+      @choice4 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:@choice1).where.not(id:@choice2).where.not(id:@choice3).first
+    end
+    if @question.id == 57
+      @answer = 2
+      @choice1 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:56).first
+      @choice2 = Choice.find(56)
+      @choice3 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:@choice1).where.not(id:@choice2).first
+      @choice4 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:@choice1).where.not(id:@choice2).where.not(id:@choice3).first
+    end
+    if @question.id == 58
+      @answer = 1
+      @choice1 = Choice.find(57)
+      @choice2 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:@choice1).first
+      @choice3 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:@choice1).where.not(id:@choice2).first
+      @choice4 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:@choice1).where.not(id:@choice2).where.not(id:@choice3).first
+    end
+    if @question.id == 59
+      @answer = 3
+      @choice1 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:58).first
+      @choice2 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:58).where.not(id:@choice1).first
+      @choice3 = Choice.find(58)
+      @choice4 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:@choice1).where.not(id:@choice2).where.not(id:@choice3).first
+    end
+    if @question.id == 60
+      @answer = 4
+      @choice1 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:59).first
+      @choice2 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:59).where.not(id:@choice1).first
+      @choice3 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:59).where.not(id:@choice1).where.not(id:@choice2).first
+      @choice4 = Choice.find(10)
+    end
+    if @question.id == 61
+      @answer = 1
+      @choice1 = Choice.find(60)
+      @choice2 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:@choice1).first
+      @choice3 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:@choice1).where.not(id:@choice2).first
+      @choice4 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:@choice1).where.not(id:@choice2).where.not(id:@choice3).first
+    end
+    if @question.id == 62
+      @answer = 2
+      @choice1 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:61).first
+      @choice2 = Choice.find(61)
+      @choice3 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:@choice1).where.not(id:@choice2).first
+      @choice4 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:@choice1).where.not(id:@choice2).where.not(id:@choice3).first
+    end
+    if @question.id == 63
+      @answer = 1
+      @choice1 = Choice.find(62)
+      @choice2 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:@choice1).first
+      @choice3 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:@choice1).where.not(id:@choice2).first
+      @choice4 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:@choice1).where.not(id:@choice2).where.not(id:@choice3).first
+    end
+    if @question.id == 64
+      @answer = 3
+      @choice1 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:63).first
+      @choice2 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:63).where.not(id:@choice1).first
+      @choice3 = Choice.find(63)
+      @choice4 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:@choice1).where.not(id:@choice2).where.not(id:@choice3).first
+    end
+    if @question.id == 65
+      @answer = 4
+      @choice1 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:64).first
+      @choice2 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:64).where.not(id:@choice1).first
+      @choice3 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:64).where.not(id:@choice1).where.not(id:@choice2).first
+      @choice4 = Choice.find(64)
+    end
+    if @question.id == 66
+      @answer = 1
+      @choice1 = Choice.find(65)
+      @choice2 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:@choice1).first
+      @choice3 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:@choice1).where.not(id:@choice2).first
+      @choice4 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:@choice1).where.not(id:@choice2).where.not(id:@choice3).first
+    end
+    if @question.id == 67
+      @answer = 2
+      @choice1 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:66).first
+      @choice2 = Choice.find(66)
+      @choice3 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:@choice1).where.not(id:@choice2).first
+      @choice4 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:@choice1).where.not(id:@choice2).where.not(id:@choice3).first
+    end
+    if @question.id == 68
+      @answer = 1
+      @choice1 = Choice.find(67)
+      @choice2 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:@choice1).first
+      @choice3 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:@choice1).where.not(id:@choice2).first
+      @choice4 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:@choice1).where.not(id:@choice2).where.not(id:@choice3).first
+    end
+    if @question.id == 69
+      @answer = 3
+      @choice1 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:68).first
+      @choice2 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:68).where.not(id:@choice1).first
+      @choice3 = Choice.find(68)
+      @choice4 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:@choice1).where.not(id:@choice2).where.not(id:@choice3).first
+    end
+    if @question.id == 70
+      @answer = 4
+      @choice1 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:69).first
+      @choice2 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:69).where.not(id:@choice1).first
+      @choice3 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:69).where.not(id:@choice1).where.not(id:@choice2).first
+      @choice4 = Choice.find(69)
+    end
+    if @question.id == 71
+      @answer = 1
+      @choice1 = Choice.find(70)
+      @choice2 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:@choice1).first
+      @choice3 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:@choice1).where.not(id:@choice2).first
+      @choice4 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:@choice1).where.not(id:@choice2).where.not(id:@choice3).first
+    end
+    if @question.id == 72
+      @answer = 2
+      @choice1 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:71).first
+      @choice2 = Choice.find(71)
+      @choice3 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:@choice1).where.not(id:@choice2).first
+      @choice4 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:@choice1).where.not(id:@choice2).where.not(id:@choice3).first
+    end
+    if @question.id == 73
+      @answer = 1
+      @choice1 = Choice.find(72)
+      @choice2 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:@choice1).first
+      @choice3 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:@choice1).where.not(id:@choice2).first
+      @choice4 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:@choice1).where.not(id:@choice2).where.not(id:@choice3).first
+    end
+    if @question.id == 75
+      @answer = 3
+      @choice1 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:74).first
+      @choice2 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:74).where.not(id:@choice1).first
+      @choice3 = Choice.find(74)
+      @choice4 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:@choice1).where.not(id:@choice2).where.not(id:@choice3).first
+    end
+    if @question.id == 76
+      @answer = 4
+      @choice1 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:75).first
+      @choice2 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:75).where.not(id:@choice1).first
+      @choice3 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:75).where.not(id:@choice1).where.not(id:@choice2).first
+      @choice4 = Choice.find(75)
+    end
+    if @question.id == 77
+      @answer = 1
+      @choice1 = Choice.find(76)
+      @choice2 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:@choice1).first
+      @choice3 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:@choice1).where.not(id:@choice2).first
+      @choice4 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:@choice1).where.not(id:@choice2).where.not(id:@choice3).first
+    end
+    if @question.id == 78
+      @answer = 2
+      @choice1 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:77).first
+      @choice2 = Choice.find(77)
+      @choice3 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:@choice1).where.not(id:@choice2).first
+      @choice4 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:@choice1).where.not(id:@choice2).where.not(id:@choice3).first
+    end
+    if @question.id == 79
+      @answer = 1
+      @choice1 = Choice.find(78)
+      @choice2 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:@choice1).first
+      @choice3 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:@choice1).where.not(id:@choice2).first
+      @choice4 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:@choice1).where.not(id:@choice2).where.not(id:@choice3).first
+    end
+    if @question.id == 80
+      @answer = 3
+      @choice1 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:79).first
+      @choice2 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:29).where.not(id:@choice1).first
+      @choice3 = Choice.find(79)
+      @choice4 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:@choice1).where.not(id:@choice2).where.not(id:@choice3).first
+    end
+    if @question.id == 81
+      @answer = 4
+      @choice1 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:80).first
+      @choice2 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:80).where.not(id:@choice1).first
+      @choice3 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:80).where.not(id:@choice1).where.not(id:@choice2).first
+      @choice4 = Choice.find(80)
+    end
+    if @question.id == 82
+      @answer = 1
+      @choice1 = Choice.find(81)
+      @choice2 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:@choice1).first
+      @choice3 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:@choice1).where.not(id:@choice2).first
+      @choice4 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:@choice1).where.not(id:@choice2).where.not(id:@choice3).first
+    end
+    if @question.id == 83
+      @answer = 2
+      @choice1 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:82).first
+      @choice2 = Choice.find(82)
+      @choice3 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:@choice1).where.not(id:@choice2).first
+      @choice4 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:@choice1).where.not(id:@choice2).where.not(id:@choice3).first
+    end
+    if @question.id == 84
+      @answer = 1
+      @choice1 = Choice.find(83)
+      @choice2 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:@choice1).first
+      @choice3 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:@choice1).where.not(id:@choice2).first
+      @choice4 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:@choice1).where.not(id:@choice2).where.not(id:@choice3).first
+    end
+    if @question.id == 85
+      @answer = 3
+      @choice1 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:84).first
+      @choice2 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:84).where.not(id:@choice1).first
+      @choice3 = Choice.find(84)
+      @choice4 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:@choice1).where.not(id:@choice2).where.not(id:@choice3).first
+    end
+    if @question.id == 86
+      @answer = 4
+      @choice1 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:85).first
+      @choice2 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:85).where.not(id:@choice1).first
+      @choice3 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:85).where.not(id:@choice1).where.not(id:@choice2).first
+      @choice4 = Choice.find(85)
+    end
+    if @question.id == 87
+      @answer = 1
+      @choice1 = Choice.find(86)
+      @choice2 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:@choice1).first
+      @choice3 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:@choice1).where.not(id:@choice2).first
+      @choice4 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:@choice1).where.not(id:@choice2).where.not(id:@choice3).first
+    end
+    if @question.id == 88
+      @answer = 2
+      @choice1 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:87).first
+      @choice2 = Choice.find(87)
+      @choice3 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:@choice1).where.not(id:@choice2).first
+      @choice4 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:@choice1).where.not(id:@choice2).where.not(id:@choice3).first
+    end
+    if @question.id == 89
+      @answer = 1
+      @choice1 = Choice.find(88)
+      @choice2 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:@choice1).first
+      @choice3 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:@choice1).where.not(id:@choice2).first
+      @choice4 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:@choice1).where.not(id:@choice2).where.not(id:@choice3).first
+    end
+    if @question.id == 90
+      @answer = 3
+      @choice1 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:89).first
+      @choice2 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:89).where.not(id:@choice1).first
+      @choice3 = Choice.find(89)
+      @choice4 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:@choice1).where.not(id:@choice2).where.not(id:@choice3).first
+    end
+    if @question.id == 91
+      @answer = 4
+      @choice1 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:90).first
+      @choice2 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:90).where.not(id:@choice1).first
+      @choice3 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:90).where.not(id:@choice1).where.not(id:@choice2).first
+      @choice4 = Choice.find(90)
+    end
+    if @question.id == 92
+      @answer = 1
+      @choice1 = Choice.find(91)
+      @choice2 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:@choice1).first
+      @choice3 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:@choice1).where.not(id:@choice2).first
+      @choice4 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:@choice1).where.not(id:@choice2).where.not(id:@choice3).first
+    end
+    if @question.id == 93
+      @answer = 2
+      @choice1 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:92).first
+      @choice2 = Choice.find(92)
+      @choice3 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:@choice1).where.not(id:@choice2).first
+      @choice4 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:@choice1).where.not(id:@choice2).where.not(id:@choice3).first
+    end
+    if @question.id == 94
+      @answer = 1
+      @choice1 = Choice.find(93)
+      @choice2 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:@choice1).first
+      @choice3 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:@choice1).where.not(id:@choice2).first
+      @choice4 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:@choice1).where.not(id:@choice2).where.not(id:@choice3).first
+    end
+    if @question.id == 95
+      @answer = 3
+      @choice1 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:94).first
+      @choice2 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:94).where.not(id:@choice1).first
+      @choice3 = Choice.find(94)
+      @choice4 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:@choice1).where.not(id:@choice2).where.not(id:@choice3).first
+    end
+    if @question.id == 96
+      @answer = 4
+      @choice1 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:95).first
+      @choice2 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:95).where.not(id:@choice1).first
+      @choice3 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:95).where.not(id:@choice1).where.not(id:@choice2).first
+      @choice4 = Choice.find(95)
+    end
+    if @question.id == 97
+      @answer = 1
+      @choice1 = Choice.find(96)
+      @choice2 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:@choice1).first
+      @choice3 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:@choice1).where.not(id:@choice2).first
+      @choice4 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:@choice1).where.not(id:@choice2).where.not(id:@choice3).first
+    end
+    if @question.id == 98
+      @answer = 2
+      @choice1 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:97).first
+      @choice2 = Choice.find(97)
+      @choice3 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:@choice1).where.not(id:@choice2).first
+      @choice4 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:@choice1).where.not(id:@choice2).where.not(id:@choice3).first
+    end
+    if @question.id == 99
+      @answer = 1
+      @choice1 = Choice.find(98)
+      @choice2 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:@choice1).first
+      @choice3 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:@choice1).where.not(id:@choice2).first
+      @choice4 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:@choice1).where.not(id:@choice2).where.not(id:@choice3).first
+    end
+    if @question.id == 100
+      @answer = 3
+      @choice1 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:99).first
+      @choice2 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:99).where.not(id:@choice1).first
+      @choice3 = Choice.find(99)
+      @choice4 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:@choice1).where.not(id:@choice2).where.not(id:@choice3).first
+    end
+    if @question.id == 101
+      @answer = 4
+      @choice1 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:100).first
+      @choice2 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:100).where.not(id:@choice1).first
+      @choice3 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:100).where.not(id:@choice1).where.not(id:@choice2).first
+      @choice4 = Choice.find(100)
+    end
+    if @question.id == 102
+      @answer = 1
+      @choice1 = Choice.find(101)
+      @choice2 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:@choice1).first
+      @choice3 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:@choice1).where.not(id:@choice2).first
+      @choice4 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:@choice1).where.not(id:@choice2).where.not(id:@choice3).first
+    end
+    if @question.id == 103
+      @answer = 2
+      @choice1 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:102).first
+      @choice2 = Choice.find(102)
+      @choice3 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:@choice1).where.not(id:@choice2).first
+      @choice4 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:@choice1).where.not(id:@choice2).where.not(id:@choice3).first
+    end
+    if @question.id == 104
+      @answer = 1
+      @choice1 = Choice.find(103)
+      @choice2 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:@choice1).first
+      @choice3 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:@choice1).where.not(id:@choice2).first
+      @choice4 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:@choice1).where.not(id:@choice2).where.not(id:@choice3).first
+    end
+    if @question.id == 105
+      @answer = 3
+      @choice1 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:104).first
+      @choice2 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:104).where.not(id:@choice1).first
+      @choice3 = Choice.find(104)
+      @choice4 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:@choice1).where.not(id:@choice2).where.not(id:@choice3).first
+    end
+    if @question.id == 106
+      @answer = 4
+      @choice1 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:105).first
+      @choice2 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:105).where.not(id:@choice1).first
+      @choice3 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:105).where.not(id:@choice1).where.not(id:@choice2).first
+      @choice4 = Choice.find(105)
+    end
+    if @question.id == 107
+      @answer = 3
+      @choice1 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:106).first
+      @choice2 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:106).where.not(id:@choice1).first
+      @choice3 = Choice.find(106)
+      @choice4 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:@choice1).where.not(id:@choice2).where.not(id:@choice3).first
+    end
+    if @question.id == 108
+      @answer = 4
+      @choice1 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:107).first
+      @choice2 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:107).where.not(id:@choice1).first
+      @choice3 = Choice.where( 'id >= ?', rand(Choice.first.id..Choice.last.id) ).where.not(id:107).where.not(id:@choice1).where.not(id:@choice2).first
+      @choice4 = Choice.find(107)
+    end
   end
 end

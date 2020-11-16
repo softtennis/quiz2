@@ -1,5 +1,5 @@
 window.addEventListener("load", function(){
-  if (document.getElementById("Q1","Q2","title")){
+  if (document.getElementById("Q1","Q2","Q3","title")){
     const q1 = document.getElementById("Q1");
     q1.addEventListener("mouseover", function(){
       q1.classList.add("red");
@@ -8,6 +8,7 @@ window.addEventListener("load", function(){
     q1.addEventListener("mouseout", function(){
       q1.classList.remove("red");
     });
+
     const q2 = document.getElementById("Q2");
     q2.addEventListener("mouseover", function(){
       q2.classList.add("red");
@@ -15,6 +16,15 @@ window.addEventListener("load", function(){
     q2.addEventListener("mouseout", function(){
       q2.classList.remove("red");
     });
+
+    const q3 = document.getElementById("Q3");
+    q3.addEventListener("mouseover", function(){
+      q3.classList.add("red");
+    });
+    q3.addEventListener("mouseout", function(){
+      q3.classList.remove("red");
+    });
+
     const title = document.getElementById("title");
       title.addEventListener("mouseover", function(){
         title.classList.add("red");
@@ -22,6 +32,7 @@ window.addEventListener("load", function(){
     title.addEventListener("mouseout", function(){
       title.classList.remove("red");
     });
+
     const back = document.getElementById("back");
     back.addEventListener("mouseover", function(){
       back.classList.add("red");
